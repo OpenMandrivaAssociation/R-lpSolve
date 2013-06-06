@@ -2,17 +2,17 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          5.6.6
+Version:          5.6.7
 Release:          1
 Summary:          Interface to Lp_solve v. 5.5 to solve linear/integer programs
 Group:            Sciences/Mathematics
 License:          LGPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/lpSolve_5.6.7.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    blas-devel
 BuildRequires:    lapack-devel
-Patch0:           lpSolve_5.6.6-format.patch
+Patch0:           lpSolve_5.6.7-format.patch
 
 %description
 Lp_solve is freely available (under LGPL 2) software for solving linear,
@@ -23,7 +23,7 @@ This version calls lp_solve version 5.5.
 
 %prep
 %setup -q -c -n %{packname}
-%patch0 -p1
+%patch0 -p0
 
 %build
 
@@ -53,4 +53,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 777869
 - Import R-lpSolve
 - Import R-lpSolve
+
 
