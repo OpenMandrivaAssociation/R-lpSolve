@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          5.6.7
-Release:          1
+Release:          2
 Summary:          Interface to Lp_solve v. 5.5 to solve linear/integer programs
 Group:            Sciences/Mathematics
 License:          LGPL-2
